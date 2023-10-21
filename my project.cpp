@@ -118,6 +118,7 @@ int main()
 	arrlength = readpositivenumber("please enter how many numbers ");
 	fillarraywithrandoomnumber(arr, arrlength);
 	printarray(arr, arrlength);
+	cout << endl;
 	int numbersearch = readpositivenumber("please enter a number to search for?");
 	cout << "you are looking for is : " <<  numbersearch << endl;
 
