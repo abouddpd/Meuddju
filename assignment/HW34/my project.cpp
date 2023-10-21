@@ -104,7 +104,24 @@ void printresult(int arr[100], int arrlength)
 	}
 }
 
-
+void findnumberposition(int arr[100], int arrlength, int number)
+{
+	bool numberfound = false;
+	for (int i=0;i<arrlength;i++)
+	{
+		if (arr[i] == number)
+		{
+			numberfound = true;
+			cout << "the number found at position " << i << endl;
+			cout << "the number found at order " << i + 1 << endl;
+			break;
+		}
+	}
+	if (!numberfound)
+	{
+		cout << "the number not found :-(";
+	}
+}
 
 
 
@@ -121,6 +138,6 @@ int main()
 	cout << endl;
 	int numbersearch = readpositivenumber("please enter a number to search for?");
 	cout << "you are looking for is : " <<  numbersearch << endl;
-
+	findnumberposition(arr, arrlength, numbersearch);
 	return 0;
 }
