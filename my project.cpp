@@ -43,7 +43,7 @@ void printarrayaftershufle(int arrlength)
 {
 	for (int i=0;i<arrlength;i++)
 	{
-		cout << randoomnumber(1, arrlength) << " ";
+		cout << randoomnumber(1, arrlength) <<endl;
 	}
 }
 
