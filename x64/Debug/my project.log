@@ -1,0 +1,5 @@
+﻿  my project.cpp
+C:\Users\abdha\source\repos\my project\my project\my project.cpp(54,27): warning C4101: 'arrsum': unreferenced local variable
+C:\Users\abdha\source\repos\my project\my project\my project.cpp(54,6): warning C4101: 'arr': unreferenced local variable
+C:\Users\abdha\source\repos\my project\my project\my project.cpp(54,16): warning C4101: 'arr2': unreferenced local variable
+  my project.vcxproj -> C:\Users\abdha\source\repos\my project\x64\Debug\my project.exe
