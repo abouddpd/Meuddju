@@ -21,6 +21,7 @@ int randoomnumber(int from, int to)
 void fillarraywithrandoomnumber(int arr[100], int arrlength)
 {
 
+
 	for (int i = 0; i <= arrlength - 1; i++)
 	{
 		arr[i] = randoomnumber(1, 100);
@@ -33,16 +34,44 @@ void printarray(int arr[100], int arrlength)
 		cout << arr[i] << " ";
 	}
 }
+void findnumberposition(int arr[100], int number, int arrlength)
+{
+	bool numbertosearch = false;
+	for (int i=0;i<arrlength;i++)
+	{
+		if (arr[i]==number)
+		{
+			numbertosearch = true;
+			cout << "the number find in postion " << i << endl;
+			cout << "the number found in order " << i + 1 << endl;
+			break;
+   	    }
+		
+	}
+	 if (!numbertosearch)
+	{
+		cout << "the number not found :-(";
+	}
+}
+
+
+
+
+
 int main()
 {
 	srand((unsigned)time(NULL));
-	int arr[100], arrlength;
-	arrlength = readpositivenumber("please enter how many numbers ");
+	int arr[100], arrlength = readpositivenumber("please enter how many element");
 	fillarraywithrandoomnumber(arr, arrlength);
+	cout << "array 1 element " << endl;
 	printarray(arr, arrlength);
 	cout << endl;
-	int numbersearch = readpositivenumber("please enter a number to search for?");
-	cout << "you are looking for is : " << numbersearch << endl;
-	findnumberposition(arr, numbersearch, arrlength);
+	int numbertosearch = readpositivenumber("please enter the number to search");
+	cout << endl;
+	cout << "you are looking for " << numbertosearch << endl;
+	cout << endl;
+	findnumberposition(arr, numbertosearch, arrlength);
+
+
 	return 0;
 }
