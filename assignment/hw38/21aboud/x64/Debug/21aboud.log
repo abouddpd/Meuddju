@@ -1,0 +1,3 @@
+﻿  21aboud.cpp
+C:\Users\abdha\source\repos\21aboud\21aboud\21aboud.cpp(45,8): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  21aboud.vcxproj -> C:\Users\abdha\source\repos\21aboud\x64\Debug\21aboud.exe
